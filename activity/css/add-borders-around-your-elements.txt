@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html>
+<head>
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 <style>
   .red-text {
@@ -19,7 +22,8 @@
     border-color:green;
   }
 </style>
-
+</head>
+<body>
 <h2 class="red-text">CatPhotoApp</h2>
 <main>
   <p class="red-text">Click here to view more <a href="#">cat photos</a>.</p>
@@ -51,3 +55,6 @@
     <button type="submit">Submit</button>
   </form>
 </main>
+
+</body>
+ </html>
