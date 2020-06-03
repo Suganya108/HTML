@@ -1,160 +1,170 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-
-<style type="text/css">
-	body{
-		margin: 0;
-		padding:0;
-		font-family: "Open Sans",sans-serif;
-	}
-	.navbar{
-		padding-top: 30px;
-		padding-bottom: 30px;
-		position: absolute;
-		top: 0;
-		width: 100%;
-		z-index: 1;
-	}
-	.nav-right{
-		float:right;
-		padding-right: 20%;
-	}
-	.nav-right a{
-		text-decoration: none;
-		padding: 25px;
-		color: white;
-		font-weight: 500;
-
-	}
-	.navlanding{
-		padding-left: 5%;
-		font-family: Arial;
-		font-size: 30px;
-		font-weight: bold;
-		text-decoration: none;
-		color: white;
-	}
-	.block{
-		width:100%;
-		height: 560px;
-		background:linear-gradient(120deg,#53f 15%,#05d5ff 70%,#a6ffcb 94%);
-		transform: skewY(-5deg);
-		transform-origin: 0;
-		position: absolute;
-		top: 0px;
-	}
-	.block span{
-		height: 190px;
-		position: absolute;
-	}
-	#mdiv{
-		width: 100%;
-		top:1px;
-		height: 555px;
-	}
-	.split{
-		width:50%;
-		position:absolute;
-		z-index:2;
-		top:10;
-		padding: -top:10px;
-	}
-	.right{
-		position: relative;
-		top: 125px;
-		left:55px;
-		height: 155px;
-	}
-	#but{
-		width: 35%;
-		height: 35px;
-		border-radius: 10px;
-		background-color: green;
-		position: relative;
-		top: 10px;
-	}
-	.left{
-		width: 35%;
-		left:800px;
-		top: 65px;
-		height:380px;
-		background-color: white;
-	}
-	input{
-    font-family:sans-serif;
-    background:#f2f2f2;
-    width:80%;
-    border:0;
-    margin:0 0 15px;
-    padding:15px;
-    font-size:14px;
+<html>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <head>
+ <style>
+.d {
+    margin: auto;
+    width: 80%;
+    background: white;
+    padding: 50px;
+    height: 600px;
 }
-#button2
-   {
-   font-family:sans-serif;
-   background:blue;
-   width:60%;
-   border:0;
-   padding:15px;
-   color:white;
-   font-size:14px;
-   position: relative;
-   left: 45px;
-   border-radius: 25px;
+
+.d1 {
+    margin: auto;
+    width: 90%;
+    background: rgba(86, 97, 250, 0.973);
+    padding: 50px;
+    height: 400px;
+    margin-top: -68px;
+}
+
+.d2 {
+    margin: auto;
+    width: 90%;
+    clip-path: polygon(0 19%, 100% 0, 100% 100%, 0% 100%);
+    background: rgb(241, 238, 238);
+    padding: 50px;
+    height: 170px;
+    padding-top: 200px;
+    border-radius: 0px 0px 10px 10px;
+    margin-top: -140px;
+}
+
+.d3 {
+    margin-top: -258px;
+    margin-left: 600px;
+    width: 230px;
+    background: white;
+    padding: 40px;
+    height: 290px;
+    border-radius: 2px;
+}
+
+.b1 {
+    background-color: rgb(42, 199, 42);
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    border: rgb(42, 199, 42);
+    border-radius: 30px;
+    width: 140px;
+    height: 35px;
+}
+
+.b2 {
+    background-color: rgba(86, 97, 250, 0.973);
+    box-shadow: 2px 5px rgba(135, 207, 235, 0.74);
+    font-size: 15px;
+    color: white;
+    border: rgba(86, 97, 250, 0.973);
+    border-radius: 30px;
+    width: 230px;
+    height: 35px;
+}
+
+.dt {
+    margin-top: -40px;
+    width: 80%;
+    background-color: rgba(86, 97, 250, 0.973);
+}
+
+.searchToolOptions {
+    font-size: 13px;
+    margin-top: 30px;
+    margin-right: -130px;
+    color: transparent;
+}
+
+.searchToolOptions button {
+    padding: 8px 16px;
+    margin: 0px;
+    text-decoration: none;
+    font-size: 13px;
+    color: #ffffff;
+    background: rgba(86, 97, 250, 0.973);
+    border: #ffffff;
+}
+
+.searchToolOptions p {
+    color: #fff !important;
+}
+
+.left {
+    float: left;
+    margin-right: 10px;
+    margin-left: 0px;
+}
+
+.right {
+    float: right;
+    margin-right: 0px;
+    margin-left: 10px;
+}
+
+.searchToolOptions li {
+    padding: 10px;
+}
+
+.i {
+    width: 230px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid;
+    border-radius: 4px;
+    box-sizing: border-box;
+    height: 30px;
+    background-color: whitesmoke;
+    border-color: white;
+}
+
+p1 {
+    color: gray;
+    line-height: 0;
+    font-size: 10px;
+    font-family: Verdana;
+}
+
+p2 {
+    color: #000000;
+    line-height: 1;
+    font-size: 20px;
+    font-family: Verdana;
 }
 </style>
 </head>
 <body>
-	<header>
-		<div class="header">
-			<nav class="navbar">
-				<a href="#" class="navlanding">Landing</a>
-				<div class="nav-right">
-					<a href="#">Home</a>
-					<a href="#">Features</a>
-					<a href="#">Reviews</a>
-					<a href="#">Pricing</a>
-					<a href="#">FAQ</a>
-					<a href="#" id="log">Get Started</a>
-				</div>
-			</nav>
-		</div>
-	</header>
-	<div id="mdiv">
-	<div class="block">
-		
-	</div>
-	<div class="split left">
-		<p style="text-align: center;font-size: 25px;">Sign Up for Free</p>
-		<div style="position: relative;left: 25px;">
-				<input type="text" name="Fullname" placeholder="Full name" >
-				<br>
-				<input type="text" name="Fullname" placeholder="Email" ><br>
-				<input type="text" name="Fullname" placeholder="Email" ><br>
-				<input type="text" name="Fullname" placeholder="Type" ><br>
-				<button id="button2">Register</button>
-		</div>
-	</div>
-	<div class="split right">
-		<p style="color: white;font-size: 45px;text-align: left; word-spacing: 5px;letter-spacing: 5px;"> Fly makes you </p>
-		<p style="color: white;font-size: 45px;text-align: left; word-spacing: 5px;letter-spacing: 5px;line-height:5px;"> faster</p>
-		<p style="color: white; text-align: left;line-height:30px; margin-top: 15px; font-size: 20px;">
-			New free template by <span style="color: grey;">uicookies.com.</span></a>For more template visit the <span style="color: grey;">site.</span>Lorem ipsum dolor sit amet,
-			consecteur adipisicing elit.
-		</p>
-		<div id="but">
-			<p style="color: white;text-align: center;padding-top: 10px;">SEE PRICING</p>
-		</div>
-			
-	</div>
+<script src="index.js"></script><div class="d">
+<div class="d1"><div class="dt">
+<ul class="searchToolOptions">
+<li class="left">
+<p class="searchToolOption">Landing</p>
+</li><li class="right">
+<div style="background-color: rgb(255, 255, 255); padding: 1px;">
+<button class="searchToolOption">Get Started</button></div></li>
+<li class="right"><p class="searchToolOption">FAQ</p></li>
+<li class="right"><p>Pricing</p></li><li class="right"><p class="searchToolOption">Reviews</p></li>
+<li class="right"><p class="searchToolOption">Features</p></li>
+<li class="right"><p class="searchToolOption">Home</p></li>
+</ul></div>
+<p style="margin-top: 12%; margin-left: 5%; font-weight: normal;">
+<p class="f2" style="color:white; font-size:40px; line-height: 1;"> Fly  makes  you <br> faster</p></p>
+<p style="margin-top: -3%; margin-left: 5%; font-weight: normal;">
+<p class="f2" style="color:white; font-size:12px;line-height: 2;"> New free template by uicookies.com. For more <br> templates visit the site. Lorem ipsum dolor sit amet, <br> consectetur adipisicing elit. </p></p>
+<button class="b1" style="margin-left: 5%;">SEE PRICING</button>
+<div class="d3"><center><p style="color:gray; font-size:18px;font-family:Verdana;margin-top:-10px;"> Sign Up for Free</p></center>
+<input class="i" placeholder="Full name">
+<input class="i" placeholder="Email">
+<input class="i" placeholder="Email"><select class="i" style="padding: 0px;">
+<option>Type</option></select>
+<button class="b2">Register</button>
 </div>
-<section class="sec2">
-<div >
-<h5 style="text-align: center;">FEATURES</h5>
-<h1 style="text-align: center;">App Features</h1></div>
-</section>
+</div>
+<div class="d2"><center><p1>F E A T U R E S</p1>
+</center>
+<center><p2>App Features</p2></center>
+</div>
+</div>
 
-
-</body>
-</html>
+</body></html
